@@ -1,0 +1,18 @@
+Axiome : Initialisation
+(vide) <=> lambda
+G = { {Initialisation, declarationAC, declarationAgent, type, val, affectationAgent,
+listeAffect paramAgent, declarationContexte, paramContexte, listeParam}, { ENV,
+NTYPA, NAG ,NCT, TINT, TDOUBL, TCAR, TCH, TBOOL, BOOL, IDF, CO, CF, VG,
+AO, AF, DPT, INT, EG, REEL, CH, CAR }, Initialisation, {
+Initialisation -> IDF CO INT VG INT CF declarationAC
+declarationAC -> NTYPA IDF AO declarationAgent AF declarationAC | NAG IDF DPT
+IDF CO INT VG INT CF AO affectationAgent AF declarationAC | NCT IDF CO
+paramContexte CF declarationAC | (vide)
+declarationAgent -> IDF DPT type paramAgent
+paramAgent -> VG declarationAgent | (vide)
+type -> TINT | TDOUBL | TCAR | TCH | TBOOL
+affectationAgent -> IDF EG val listeAffect
+listeAffect -> VG affectationAgent | (vide)
+val -> INT | BOOL | REEL | CH | CAR
+paramContexte -> INT | INT listeParam
+listeParam -> VG INT paramContexte | (vide)
