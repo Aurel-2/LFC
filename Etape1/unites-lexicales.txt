@@ -1,0 +1,33 @@
+Mots-clés du système : Environnement, NewTypeAgent, NewAgent, NewContexte
+
+Identificateur : répétition de lettres non accentuées en majuscule ou minuscule, d'underscores et/ou de chiffres, allant et ayant comme premier caractère une lettre.
+
+Constante entière : répétition ou non (un seul) de chiffres de 0 à 9. Un entier ayant une séquence de chiffres ne peut pas commencer par 0 (0010 impossible).
+
+Constante réelle : répétition ou non (un seul) de chiffres de 0 à 9, suivie d'une virgule puis d'une répétition de chiffres de 0 à 9. Un réel ayant une répétition de chiffres avant la virgule ne peut pas commencer par 0 (pas 0010,20, uniquement 10,20).
+
+Constante caractère : caractère quelconque entre quotes.
+
+Constante chaîne de caractères : répétition, entourée de guillemets, de caractères alphanumériques ou spéciaux autres que les guillemets
+
+Constante booléenne : soit le mot-clé TRUE ou le mot-clé FALSE
+
+Typage : soit les mots-clés suivants : int, double, char, string, boolean
+
+Séparateur de déclaration d'attributs : caractère "," 
+
+Opérateur d'affectation : caractère "=" 
+
+Opérateur de typage/déclaration : caractère ":" 
+
+Symbole de début de conteneur de paramètres : caractère "["
+
+Symbole de fin de conteneur de paramètres : caractère "]"
+
+Symbole de début de bloc : caractère "{" 
+
+Symbole de fin de bloc : caractère "}"
+
+Espaceur de mots : répétition ou non d'espace, caractère " " et/ou chaine de caractère "\t"
+
+Retour à la ligne : chaine de caractère  "\n"
